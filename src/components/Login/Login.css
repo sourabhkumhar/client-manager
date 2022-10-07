@@ -1,0 +1,22 @@
+.login-page-svg {
+    width: 80%;
+}
+
+.subtitle {
+    margin-top: -10px;
+    font-size: 70%;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+}
+
+.login-inputs {
+    width: 160%;
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    .login-inputs {
+        width: 120%;
+    }
+}

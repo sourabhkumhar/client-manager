@@ -1,0 +1,25 @@
+.current {
+    border-bottom: 3px solid #1334B3;
+    color: #1334B3 !important;
+    font-weight: bold;
+}
+
+.col-inputs {
+    width: 48%;
+    color: grey;
+}
+
+.col-inputs-full {
+    width: 98%;
+    color: grey;
+}
+
+
+@media only screen and (max-width: 865px) {
+    .col-inputs {
+        width: 100%;
+    }
+    .col-inputs-full {
+        width: 100%;
+    }
+}

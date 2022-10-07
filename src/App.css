@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.alert-container {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 30px;
+    transition: 0.1s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.centered-flex-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pointer {
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.border-none {
+    border: none;
+    outline: none;
+}
+.border-none:focus {
+    border: none;
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* Scroll bar */
+::-webkit-scrollbar {
+    background-color: rgb(255, 255, 255);
+    width: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb {
+    background-color: #233244;
+}
+
+/* Custom Background Colors */
+.bg-blue {
+    background: #1334B3;
+    color: white;
+}
+
+/* Custom Text Colors */
+.text-grey {
+    color: #B8BABC;
+}
+.text-darkblue {
+    color: #233244;
+}
+.text-blue {
+    color: #1334B3;
+}
+
+
+/* custon font size */
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-15 {
+    font-size: 15px;
 }
