@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Payment() {
+export default function Payment(props) {
   return (
     <div className='px-3 py-4'>
       <h5 className='fw-bold'>Payment Setup</h5>
@@ -100,7 +100,7 @@ export default function Payment() {
         </div>
 
         <div className="d-flex">
-          <Link to="/clients/add/theme-setup" className='text-decoration-none'>
+          <Link onClick={() => props.showComplete('step2')} to="/clients/add/theme-setup" className='text-decoration-none'>
             <button className='d-flex btn bg-blue border py-2 rounded-3 mx-1'>Save & Continue<span className="material-symbols-outlined">navigate_next</span></button>
           </Link>
 

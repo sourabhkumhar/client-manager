@@ -1,13 +1,13 @@
 import React, { useRef } from 'react'
 import { Link } from 'react-router-dom';
 
-export default function Create() {
+export default function Create(props) {
   const ref = useRef(null);
 
   const getImg = () => {
     ref.current.click();
   }
-
+  
   return (
     <div className='px-3 py-4'>
       <h5 className='fw-bold'>Create Client Profile</h5>
@@ -68,11 +68,11 @@ export default function Create() {
         </div>
 
         <div className="d-flex">
-          <Link to="/clients/add/payment-setup" className='text-decoration-none'>
+          <Link onClick={() => props.showComplete('step1')} to="/clients/add/payment-setup" className='text-decoration-none'>
             <button className='d-flex btn bg-blue border py-2 rounded-3 mx-1'>Save & Continue<span className="material-symbols-outlined">navigate_next</span></button>
           </Link>
 
-          <button type="reset" className='d-flex btn py-2 mx-1 gap-2 text-blue'><span style={{ transform: "scaleX(-1" }} className="material-symbols-outlined">refresh</span>Reset</button>
+          <button type="reset" className='d-flex btn py-2 mx-1 gap-2 text-blue'><span style={{ transform: "scaleX(-1)" }} className="material-symbols-outlined">refresh</span>Reset</button>
         </div>
       </form>
     </div>
