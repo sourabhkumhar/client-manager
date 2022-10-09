@@ -10,7 +10,6 @@ export default function Modules(props) {
         if (listOfClass) {
           listOfClass.classList.remove("bg-blue");
         }
-
         event.currentTarget.classList.add("bg-blue");
         listOfClass = event.currentTarget;
       });
@@ -23,7 +22,7 @@ export default function Modules(props) {
 
       <form className='mt-3'>
 
-        <div className="d-flex gap-4">
+        <div className="d-md-flex d-block gap-4">
           <div className='d-flex flex-column w-25'>
 
             <div className="check my-1 p-2 rounded d-flex gap-2">
