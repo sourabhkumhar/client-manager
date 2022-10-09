@@ -66,7 +66,7 @@ export default function Modules(props) {
             </div>
           </div>
 
-          <div className="shadow-lg p-3 w-75 col-inputs-full">
+          <div className="shadow-lg p-3 col-inputs-full">
             <div className="d-md-flex d-block justify-content-between">
               <div className="d-flex">
                 <img src={process.env.PUBLIC_URL + "/images/daily-task.svg"} alt="" />
