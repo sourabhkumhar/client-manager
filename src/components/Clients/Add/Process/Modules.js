@@ -10,7 +10,6 @@ export default function Modules(props) {
         if (listOfClass) {
           listOfClass.classList.remove("bg-blue");
         }
-
         event.currentTarget.classList.add("bg-blue");
         listOfClass = event.currentTarget;
       });
@@ -23,8 +22,8 @@ export default function Modules(props) {
 
       <form className='mt-3'>
 
-        <div className="d-md-flex d-block gap-4">
-          <div className='d-flex flex-column col-md-3'>
+        <div className="d-flex gap-4">
+          <div className='d-flex flex-column w-25'>
 
             <div className="check my-1 p-2 rounded d-flex gap-2">
               <input type="checkbox" name="" id="" />
@@ -67,7 +66,7 @@ export default function Modules(props) {
             </div>
           </div>
 
-          <div className="shadow-lg p-3 col-inputs-full text-black my-3 rounded-3">
+          <div className="shadow-lg p-3 w-75">
             <div className="d-md-flex d-block justify-content-between">
               <div className="d-flex">
                 <img src={process.env.PUBLIC_URL + "/images/daily-task.svg"} alt="" />
