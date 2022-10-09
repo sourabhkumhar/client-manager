@@ -48,7 +48,7 @@ export default function Theme(props) {
 
         <span className='fw-bold fs-13 text-secondary'>Use Color</span>
         <div className="input-group rounded-3 border p-2 gap-3">
-          <input type="color" onChange={handleColor} name="" className='p-2 border-0' id="loginTheme" value={color.loginColor} required />
+          <input type="color" onChange={handleColor} name="" className='p-2 border-0 rounded-3' id="loginTheme" value={color.loginColor} required />
 
           <input type="text" name="" value={color.loginColor} className='border-none' id="" />
         </div>

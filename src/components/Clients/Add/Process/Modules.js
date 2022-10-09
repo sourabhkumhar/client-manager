@@ -23,8 +23,8 @@ export default function Modules(props) {
 
       <form className='mt-3'>
 
-        <div className="d-flex gap-4">
-          <div className='d-flex flex-column w-25'>
+        <div className="d-md-flex d-block gap-4">
+          <div className='d-flex flex-column col-md-3'>
 
             <div className="check my-1 p-2 rounded d-flex gap-2">
               <input type="checkbox" name="" id="" />
@@ -67,7 +67,7 @@ export default function Modules(props) {
             </div>
           </div>
 
-          <div className="shadow-lg p-3 w-75">
+          <div className="shadow-lg p-3 col-inputs-full text-black my-3 rounded-3">
             <div className="d-md-flex d-block justify-content-between">
               <div className="d-flex">
                 <img src={process.env.PUBLIC_URL + "/images/daily-task.svg"} alt="" />
@@ -76,7 +76,10 @@ export default function Modules(props) {
                   <span className='fs-13'>Select the sub modules that the client can use.</span>
                 </div>
               </div>
-              <button className="btn btn-primary bg-blue border-0 d-flex" style={{ paddingTop: "12px" }}><span class="material-symbols-outlined">done</span>Visible to Client</button>
+              <button className="btn btn-primary bg-blue border-0 mt-md-0 mt-2 d-flex visibleToClient">
+                <span class="material-symbols-outlined">done</span>
+                <span>Visible to Client</span>
+              </button>
             </div>
 
             <div className="d-flex flex-column mt-3">
