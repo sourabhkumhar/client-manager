@@ -8,25 +8,8 @@ export default function Login(props) {
   
     const handleLogin = async (e) => {
       e.preventDefault();
-      
-      const response = await fetch('https://reqres.in/api/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ email: cred.email, password: cred.password })
-      })
-      const json = await response.json()
-  
-      if (json.token) {
-        // save the auth token and redirect
-        localStorage.setItem('token', json.token)
+        
         navigate("/clients");
-        props.showAlert('Logged in Successfully', 'success', 'Success');
-      }
-      else {
-        props.showAlert(`${json.error}`, 'danger', 'Error');
-      }
     }
   
     const handleChange = (e) => {
